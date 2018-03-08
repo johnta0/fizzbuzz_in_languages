@@ -15,4 +15,15 @@ def standard_fizzbuzz
   end
 end
 
+def shorter_fizzbuzz
+  (1..100).each do |num|
+    out = ''
+    out << 'fizz' if num % 3 == 0
+    out << 'buzz' if num % 5 == 0
+    out = num if out == ''
+    puts(out)
+  end
+end
+
 standard_fizzbuzz
+shorter_fizzbuzz
