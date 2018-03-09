@@ -16,13 +16,7 @@ def standard_fizzbuzz
 end
 
 def shorter_fizzbuzz
-  (1..100).each do |num|
-    out = ''
-    out << 'fizz' if num % 3 == 0
-    out << 'buzz' if num % 5 == 0
-    out = num if out == ''
-    puts(out)
-  end
+  (1..100).each{|num| out = '';out << 'fizz' if num % 3 == 0; out << 'buzz' if num % 5 == 0; out = num if out == ''; puts out}
 end
 
 standard_fizzbuzz
